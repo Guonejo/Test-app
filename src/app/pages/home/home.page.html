@@ -14,9 +14,10 @@
     </div>
 
     <ion-list>
-      <!-- Enlaces del menú deshabilitados si no esta autenticado -->
-      <ion-item button [routerLink]="['/perfil']" [disabled]="!isAuthenticated">Perfil</ion-item>
-      <ion-item button [routerLink]="['/cambio-password']" [disabled]="!isAuthenticated">Opciones</ion-item>
+      <!-- Enlaces del menú deshabilitados si no está autenticado -->
+      <ion-item button [routerLink]="['/perfil']">Perfil</ion-item>
+      <ion-item button [routerLink]="['/cambio-password']">Opciones</ion-item>
+      <ion-item button [routerLink]="['/chatbot']">Chatbot</ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
@@ -40,6 +41,9 @@
     </ion-card>
     <ion-card>
       <ion-card-content (click)="navigateTo('bibliografia')">Bibliografía</ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content (click)="navigateTo('chatbot')">Chatbot - Sección no disponible</ion-card-content>
     </ion-card>
 
     <!-- Botón de logout/login -->
